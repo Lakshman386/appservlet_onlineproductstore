@@ -1,0 +1,349 @@
+@charset "ISO-8859-1";
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-image:
+		url("https://images.unsplash.com/photo-1611180900214-d4c04c67e6e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	font-family: consolas;
+	text-align: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+form {
+	margin: 50px auto;
+	width: 300px;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	/* Semi-transparent white background for better readability */
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"] {
+	width: 100%;
+	height: 30px;
+	padding: 10px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	color: #333; /* Dark gray color for input text */
+}
+
+input[type="submit"] {
+	width: 100%;
+	/*background-color: #3498db;  Blue button background color */
+	background-color: #4CAF50;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type="submit"]:hover {
+	background-color: #32CD32;
+	/* Darker blue button background color on hover */
+}
+
+a {
+	display: inline-block;
+	margin: 10px auto;
+	width: auto;
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	text-align: center;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+a:hover {
+	background-color: #0056b3;
+}
+
+h2 {
+	text-align: center;
+	text-decoration: underline;
+}
+
+label {
+	font-size: 20px;
+}
+
+::placeholder {
+	letter-spacing: 1.2px;
+}
+
+table {
+	border-collapse: collapse;
+	width: 70%;
+	height: 20px;
+	border: 1px solid #dddddd;
+	background-color: #ffffff;
+	border-radius: 8px;
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+	padding: 6px 8px;
+	text-align: center;
+}
+
+tr:nth-child(even) {
+	background-color: #f7f7f7;
+}
+
+th {
+	background-color: #4CAF50;
+	color: white;
+}
+
+.header {
+	width: 100%;
+	background-color: goldenrod;
+	color: white;
+	padding: 30px;
+	text-align: center;
+}
+
+.container {
+	text-align: left;
+	border: 5px groove goldenrod;
+	margin: 10px auto;
+	width: auto;
+	padding: 20px;
+	background-color: rgba(255, 255, 255, 0.8);
+	/* Semi-transparent white background for better readability */
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+	width: 100%;
+	background-color: maroon;
+	color: white;
+	padding: 20px;
+	text-align: center;
+}
+
+p {
+	text-align: center;
+}
+
+.m {
+	margin: 20px auto;
+}
+
+#qty {
+	display: inline-block;
+	width: 200px;
+	height: 20px;
+	color: blue;
+}
+
+/* @charset "UTF-8";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+}
+
+form {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input[type="submit"] {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 14px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+a {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #0056b3;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-size: 18px;
+}
+
+::placeholder {
+    color: #999;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.header,
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header h1,
+.footer h1 {
+    margin-bottom: 10px;
+}
+
+.m {
+    margin: 20px 0;
+}
+
+.blur {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.8); Semi-transparent white background
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+}
+
+.header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.highlight {
+    color: goldenrod;
+}
+
+.container {
+    padding: 20px;
+}
+
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container p {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container a {
+    display: block;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 14px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container a:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #343a40;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+ */

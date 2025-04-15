@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Add Product</title>
+<link rel="stylesheet" href="css/OnlineStoreStyles.css"> 
+</head>
+<body>
+
+<form action="add" method="post">
+	
+	<h2>Add Product</h2>
+	<p>Enter Product Details</p>
+	<div class="container">
+		<label for="code">ProductCode:</label>
+		<input type="text" id="code" name="code" placeholder="ProductCode" required="required">
+		<label for="name">ProductName:</label>
+		<input type="text" id="name" name="name" placeholder="ProductName" required="required">
+		<label for="price">ProductPrice:</label>
+		<input type="text" id="price" name="price" placeholder="ProductPrice" required="required">
+		<label for="qty">ProductQuantity:</label>
+		<input type="text" id="qty" name="qty" placeholder="ProductQuantity" required="required">
+	</div>
+		<input type="submit" value="Add Product">
+</form>
+
+</body>
+</html>

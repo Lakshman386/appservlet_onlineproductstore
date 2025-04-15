@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>HomePage</title>
+
+<style>
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+body {
+	background-image:
+		url("https://images.unsplash.com/photo-1611180900214-d4c04c67e6e0?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	font-family: Arial;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+.header {
+	width: 100%;
+	height: 100px;
+	background-color: goldenrod /* orangered */;
+	color: maroon;
+	padding: 20px;
+	text-align: center;
+}
+
+.container {
+	/* flex: 1; /* Allow container to grow and take up remaining vertical space */
+	width: 300px;
+	height: 300px;
+	max-width: 600px;
+	margin: 150px auto;
+	padding: 10px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer {
+	width: 100%;
+	background-color: maroon;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	margin-top: auto;
+}
+
+.container h2, .container p {
+	margin-bottom: 20px;
+	color: white;
+}
+
+a {
+	display: inline-block;
+	width: 150px;
+	padding: 10px;
+	background-color: #007bff;
+	color: #fff;
+	border-radius: 5px;
+	text-decoration: none;
+	margin-bottom: 20px;
+}
+
+a:hover {
+	background-color: #0056b3;
+}
+
+.highlight {
+	color: maroon;
+}
+
+.blur {
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0, 0, 0, 0.25);
+}
+</style>
+
+
+<!-- <link rel="stylesheet" href="css/OnlineStoreStyles.css"> -->
+
+</head>
+<body>
+
+	<div class="blur">
+
+		<div class="header">
+			<h1>
+				<span class="highlight">W</span>elcome to Online Product Store
+			</h1>
+		</div>
+
+		<div class="container">
+			<h2>Home Page</h2>
+			<p>Select Your Login Mode</p>
+			<a href="UserLogin.html">User Login</a> 
+			<a href="AdminLogin.html">Admin Login</a>
+		</div>
+
+		<div class="footer">
+			<p>Manikanth Pusalwar &copy; 2024</p>
+		</div>
+	</div>
+
+</body>
+</html>
